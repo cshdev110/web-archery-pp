@@ -30,9 +30,8 @@ main {
     position: sticky;
     top: 0px;
     width: 100%;
-    height: min(75px, 8vw);
-    background-color: #097054;
-    opacity: .9;
+    height: min(45px, 8vw);
+    background-color: rgb(9, 112, 84, .9);
     box-shadow: 2px 5px 15px;
     display: flex;
     flex-direction: row;
@@ -40,8 +39,8 @@ main {
 }
 
 #logo-nav {
-    width: min(85px, 9vw);
-    height: min(85px, 9vw);
+    width: min(75px, 9vw);
+    height: min(75px, 9vw);
     margin-left: 2%;
     margin-right: 2%;
     border-radius: 50%;
@@ -72,25 +71,62 @@ main {
 
 /* Icons-home adding padding left - right*/
 #home-li>img {
-    width: min(40px, 9vw);
+    width: min(35px, 9vw);
     /*Black to white*/
     filter: invert();
     opacity: .75;
 }
 
 #menu-bar-nav>ul>li {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0% 0%;
-    width: min(120px, 9vw);
-    font-size: min(20px, 1.5vw);
+    width: min(120px, 11vw);
+    font-size: min(14px, 1.5vw);
+    font-weight: bold;
+    list-style: none;;
     color: hsla(0, 0%, 100%, 0.75);
 }
 
 #menu-bar-nav>ul>li:hover {
     background-color: #10b98c;
     cursor: pointer;
+}
+
+/************************* Nav - menu > sub-menus *************************/
+.ul-sub-menu-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    left: 0px;
+    background-color:#097054;
+    list-style: none;
+    width: min(210px, 22vw);
+    height: min(180px, 22vw);
+    opacity: 0;
+    transition: all ease .3s;
+}
+
+.ul-sub-menu-bar>li {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.ul-sub-menu-bar>li:hover {
+    background-color: #10b98c;
+}
+
+#sub-menu-bar-tryarchery:hover>ul, #sub-menu-bar-disciplines:hover>ul{
+    top: 100%;
+    opacity: 1;
 }
 
 /************************* Social Media *************************/
@@ -112,7 +148,7 @@ main {
     position: fixed;
     right: -40px;
     top: 30%;
-    background-color:#FFDE00;
+    background-color: #FFDE00;
     border-radius: 10px 0px 0px 10px;
     transition: right ease-out .1s;
 }
@@ -121,13 +157,13 @@ main {
     right: 0px;
 }
 
-#social-media-section > .social-media {
+#social-media-section>.social-media {
     width: 35px;
     margin: 6px;
     cursor: pointer;
 }
 
-#social-media-section > .social-media:hover {
+#social-media-section>.social-media:hover {
     transform: scale(110%);
 }
 
@@ -137,7 +173,6 @@ main {
 
 /************************* Header *************************/
 header {
-    background-image: url('../img/Image1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -145,14 +180,72 @@ header {
     flex-direction: row;
     justify-content: center;
     height: min(400px, 30vw);
-    padding-top: 2%;
-    padding-bottom: 2%;
 }
 
 #logo-header {
     display: none;
 }
 
+/************************* Header > div#div-slide-imgs-header *************************/
+#div-slide-imgs-header {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.radio-slide-class {
+    position: absolute;
+    align-self: flex-end;
+    width: min(20px, 2vw);
+    height: min(20px, 2vw);
+    margin-bottom: 1%;
+    opacity: .7;
+    transition: transform .1s ease;
+}
+
+.radio-slide-class:hover {
+    transform: scale(1.2);
+}
+
+#input-images-slide-header-1 { margin-right: 6%; }
+#input-images-slide-header-2 { margin-right: 2%;  }
+#input-images-slide-header-3 { margin-right: -2%;  }
+#input-images-slide-header-4 { margin-right: -6%;  }
+
+#div-slide-imgs-header>img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: all ease 1s;
+}
+
+#div-images-header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#input-images-slide-header-1:checked ~ #div-images-header {
+    background-image: url('../img/Image1.jpg');
+}
+
+#input-images-slide-header-2:checked ~ #div-images-header {
+    background-image: url('../img/Image3.jpg');
+}
+
+#input-images-slide-header-3:checked ~ #div-images-header {
+    background-image: url('../img/Image5.jpg');
+}
+
+#input-images-slide-header-4:checked ~ #div-images-header {
+    background-image: url('../img/Image8.jpg');
+}
+
+/************************* main *************************/
 .half-title-header {
     display: flex;
     flex-direction: column;
@@ -164,14 +257,10 @@ header {
     text-shadow: 0px 5px 10px black;
 }
 
-#scll-images-form-header {
-    align-self: flex-end;
-}
-
 /************************* @media *************************/
 @media screen and (max-width: 720px) {
 
-    /************************* @media nav *************************/
+    /************************* @media - nav - menu *************************/
     #section-menu-bar-nav {
         flex-direction: row;
         justify-content: flex-end;
@@ -197,7 +286,7 @@ header {
 
     #responsive-nav-input {
         display: initial;
-        
+
         appearance: none;
         width: 9vw;
         height: 100%;
@@ -214,7 +303,7 @@ header {
         background-color: #097054;
         height: 0vh;
         width: 0vw;
-        opacity: .9;
+        opacity: 1;
         transition: all ease-out .2s;
     }
 
@@ -224,13 +313,17 @@ header {
     }
 
     #menu-bar-nav>ul>li {
-        font-size: 20px;
         width: 100%;
         color: black;
-        height: 50px;
+    }
+
+    #menu-bar-nav>ul>li>h3 {
+        padding: 2.3% 0%;
+        font-size: 20px;
     }
 
     #home-li>img {
+        padding: 2.3% 0%;
         filter: none;
         opacity: 1;
     }
@@ -243,17 +336,48 @@ header {
         background-image: url('../icon/menu-open.png');
     }
 
-    /* #responsive-nav-input:not(:checked) + #menu-bar-nav {
-        
-    } */
-
     #responsive-nav-input:checked+#menu-bar-nav {
         height: 100vh;
         width: 100vw;
     }
 
     #responsive-nav-input:checked+#menu-bar-nav>ul {
-        display: inline;
+        display: block;
+    }
+
+    /************************* @media - nav - menu - sub-menus *************************/
+    #sub-menu-bar-tryarchery, #sub-menu-bar-disciplines {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0%;
+    }
+
+    .ul-sub-menu-bar {
+        top: 100%;
+        opacity: 1;
+        position: static;
+        z-index:inherit;
+        width: 100%;
+        height: 0px;
+        background-color: #12d19e;
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: all ease .3s;
+    }
+
+    #sub-menu-bar-tryarchery:hover>ul, #sub-menu-bar-disciplines:hover>ul {
+        transform: scaleY(1);
+        height: 130px;
+    }
+
+    .ul-sub-menu-bar>li {
+        padding-left: 0%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        width: 100%;
+        font-size: 18px;
+        font-weight: lighter;
     }
 
     /************************* @media Social Media *************************/
@@ -269,26 +393,30 @@ header {
         left: 0px;
         top: 0px;
         z-index: 10;
-        width: 20%;
+        width: min(120px, 22vw);
         background-color: #10b98c;
         border-radius: 5px;
         margin: 0.5%;
     }
 
-    #social-media-section > .social-media {
+    #social-media-section>.social-media {
         width: 100%;
         margin: 1%;
         cursor: pointer;
     }
 
-    #social-media-section > .social-media:hover {
+    #social-media-section>.social-media:hover {
         transform: scale(110%);
+    }
+
+    #instagram {
+        background-color: transparent;
     }
 
     /************************* @media header *************************/
     header {
-        flex-direction: column;
-        align-items: center;
+        /* flex-direction: column;
+        align-items: center;*/
         position: relative;
     }
 
@@ -307,10 +435,14 @@ header {
     }
 
     #logo-header:hover {
-        transform: scale(110%);
+        transform: scale(1.1);
     }
 
-    #scll-images-form-header {
+    .radio-slide-class {
         display: none;
+    }
+
+    #div-images-header {
+        background-image: url('../img/Image2.jpg');
     }
 }
