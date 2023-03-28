@@ -16,12 +16,13 @@ html {
 body {
     width: min(100vw, 1920px);
     /* remove*/
-    height: 3000px;
-    background-color: #097054;
+    /* height: 3000px; */
+    background-color: #000000;
 }
 
 /* remove */
 main {
+    background-color: white;
     height: 1000px;
 }
 
@@ -32,7 +33,7 @@ main {
     width: 100%;
     height: min(45px, 8vw);
     background-color: rgb(9, 112, 84, .9);
-    box-shadow: 2px 5px 15px;
+    box-shadow: 3px 5px 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,7 +72,7 @@ main {
 
 /* Icons-home adding padding left - right*/
 #home-li>img {
-    width: min(35px, 9vw);
+    width: min(35px, 6vw);
     /*Black to white*/
     filter: invert();
     opacity: .75;
@@ -82,11 +83,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0% 0%;
-    width: min(120px, 11vw);
+    width: min(130px, 12vw);
     font-size: min(14px, 1.5vw);
     font-weight: bold;
-    list-style: none;;
+    list-style: none;
     color: hsla(0, 0%, 100%, 0.75);
 }
 
@@ -96,19 +96,53 @@ main {
 }
 
 /************************* Nav - menu > sub-menus *************************/
+/* Arrows: expand and contract */
+#sub-menu-bar-tryarchery, #sub-menu-bar-disciplines {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        padding: 0%;
+}
+
+#sub-menu-bar-tryarchery>div, #sub-menu-bar-disciplines>div {
+    display: flex;
+    align-items: center;
+}
+
+#sub-menu-bar-tryarchery>div>h3, #sub-menu-bar-disciplines>div>h3 {
+    text-align: center;
+}
+
+#sub-menu-bar-tryarchery>div>i, #sub-menu-bar-disciplines>div>i {
+    width: 20px;
+    height: 20px;
+    background-image: url('../icon/expand-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: invert();
+}
+
+#sub-menu-bar-tryarchery:hover>div>i, #sub-menu-bar-disciplines:hover>div>i {
+    background-image: url('../icon/contract-icon.png');
+}
+
+/* sub-menus */
 .ul-sub-menu-bar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    z-index: -1;
-    top: 0%;
+    top: 115%;
     left: 0px;
     background-color:#097054;
     list-style: none;
     width: min(210px, 22vw);
     height: min(180px, 22vw);
     opacity: 0;
+    box-shadow: 3px 5px 10px black;
+    transform: scaleY(0);
+    transform-origin: top left;
     transition: all ease .3s;
 }
 
@@ -124,9 +158,10 @@ main {
     background-color: #10b98c;
 }
 
-#sub-menu-bar-tryarchery:hover>ul, #sub-menu-bar-disciplines:hover>ul{
-    top: 100%;
-    opacity: 1;
+#sub-menu-bar-tryarchery:hover>ul, #sub-menu-bar-disciplines:hover>ul {
+    /* 410% to allow the sub menu shows up, from up to down.  */
+    transform: scaleY(1);
+    opacity: .9;
 }
 
 /************************* Social Media *************************/
@@ -257,6 +292,109 @@ header {
     text-shadow: 0px 5px 10px black;
 }
 
+/************************* footer *************************/
+/* general settings */
+#info-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #097054;
+    padding: 5% 0%;
+}
+
+#info-footer fieldset {
+    display: flex;
+    flex-direction: column;
+    width: min(300px, calc(86vw/3));
+    border-color: #097054;
+    padding: 2%;
+    box-shadow: 0px 5px 10px black;
+}
+
+#info-footer legend {
+    width: 50%;
+    padding: 3% 0%;
+    background-color: black;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px black;
+
+}
+
+/* general info footer */
+#general-info-footer-fieldset {
+    background-color: rgb(255, 222, 0, .1);
+}
+
+#general-info-footer-fieldset div {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#general-info-footer-fieldset div>* {
+    margin-right: 2%;
+}
+
+/* map footer */
+#map-footer-fieldset {
+    background-color: rgb(101, 153, 255, .1);
+}
+
+#map-footer-fieldset>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+#map-footer-fieldset li {
+    margin: 2%;
+}
+
+/* social media footer */
+#social-media-footer-fieldset {
+    background-color: rgb(255, 153, 0, .1);
+}
+
+#social-media-footer-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#social-media-footer-div>img {
+    width: min(50px, 10vw);
+    height: min(50px, 10vw);
+    background-color: rgb(255, 221, 0, .5);
+    padding: 2%;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: transform ease .2s;
+}
+
+#social-media-footer-div>img:hover {
+    transform: scale(1.2);
+}
+
+/* section copyrights */
+#copyrights>p {
+    text-align: center;
+    padding: 2% 0%;
+    color: white;
+}
+
+/************************* @media *************************/
 /************************* @media *************************/
 @media screen and (max-width: 720px) {
 
@@ -303,27 +441,28 @@ header {
         background-color: #097054;
         height: 0vh;
         width: 0vw;
-        opacity: 1;
+        opacity: .9;
         transition: all ease-out .2s;
     }
 
     #menu-bar-nav>ul {
-        flex-direction: column;
         display: none;
     }
 
     #menu-bar-nav>ul>li {
+        flex-direction: column;
+        align-items: flex-start;
         width: 100%;
+        font-size: .9em;
         color: black;
     }
 
     #menu-bar-nav>ul>li>h3 {
-        padding: 2.3% 0%;
-        font-size: 20px;
-    }
+        padding: 2.3% 5%;
+    } 
 
     #home-li>img {
-        padding: 2.3% 0%;
+        padding: 2.3% 5%;
         filter: none;
         opacity: 1;
     }
@@ -345,12 +484,20 @@ header {
         display: block;
     }
 
-    /************************* @media - nav - menu - sub-menus *************************/
-    #sub-menu-bar-tryarchery, #sub-menu-bar-disciplines {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 0%;
+    /************************* @media - nav - menu > sub-menus *************************/
+    #sub-menu-bar-tryarchery>div, #sub-menu-bar-disciplines>div {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #sub-menu-bar-tryarchery>div>h3, #sub-menu-bar-disciplines>div>h3 {
+        padding: 2.3% 5%;
+    }
+    
+
+    #sub-menu-bar-tryarchery>div>i, #sub-menu-bar-disciplines>div>i {
+        filter: none;
+        padding-right: 5%;
     }
 
     .ul-sub-menu-bar {
@@ -372,11 +519,10 @@ header {
     }
 
     .ul-sub-menu-bar>li {
-        padding-left: 0%;
         padding-top: 2%;
         padding-bottom: 2%;
         width: 100%;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: lighter;
     }
 
@@ -415,8 +561,6 @@ header {
 
     /************************* @media header *************************/
     header {
-        /* flex-direction: column;
-        align-items: center;*/
         position: relative;
     }
 
