@@ -11,58 +11,81 @@
 </head>
 
 <body>
+    <!---------------------------------------------- bar menu - nav ---------------------------------------------->
     <section id="section-menu-bar-nav">
-        <img src="icon/Logo.png" alt="Logo" id="logo-nav">
+        <a href=""><img src="icon/Logo.png" alt="Logo" id="logo-nav"></a>
         <p id="contact-menu-bar-section">
             <img src="icon/phone-icon.png" alt="icon-phone" id="phone-icon-menu-bar-section"> (+61) 401573236
         </p>
-        <input type="checkbox" name="" id="responsive-nav-input">
+        <input type="checkbox" id="responsive-nav-input">
         <nav id="menu-bar-nav">
             <ul>
-                <li id="home-li"><img src="icon/home-icon.png" alt="Home"></li>
+                <li id="home-li"><a href=""><img src="icon/home-icon.png" alt="Home"></a></li>
                 <li id="sub-menu-bar-tryarchery">
                     <div>
-                        <h3>Try Archery</h3><i></i>
+                        <a href="section/tryarchery.html" target="_blank">
+                            <h3>Try Archery</h3>
+                            <i></i>
+                        </a>
                     </div>
                     <ul class="ul-sub-menu-bar">
-                        <li>Archery Courses</li>
-                        <li>Archery Width Disabilities</li>
-                        <li>Come &#39;N&#39; Try Sessions</li>
+                        <li><a href="">Archery Courses</a></li>
+                        <li><a href="">Archery Width Disabilities</a></li>
+                        <li><a href="">Come &#39;N&#39; Try Sessions</a></li>
                     </ul>
                 </li>
                 <li>
-                    <h3>Membership</h3>
+                    <a href="">
+                        <h3>Membership</h3>
+                    </a>
                 </li>
                 <li id="sub-menu-bar-disciplines">
                     <div>
-                        <h3>Disciplines</h3><i></i>
+                        <a href="">
+                            <h3>Disciplines</h3>
+                            <i></i>
+                        </a>
                     </div>
                     <ul class="ul-sub-menu-bar">
-                        <li>Target</li>
-                        <li>Indoor</li>
-                        <li>Clout</li>
+                        <li><a href="">Target Archery</a></li>
+                        <li><a href="">Indoor Archery</a></li>
+                        <li><a href="">Clout Archery</a></li>
                     </ul>
                 </li>
                 <li>
-                    <h3>Coaching</h3>
+                    <a href="">
+                        <h3>Coaching</h3>
+                    </a>
                 </li>
                 <li>
-                    <h3>Info</h3>
+                    <a href="">
+                        <h3>Info</h3>
+                    </a>
                 </li>
                 <li>
-                    <h3>Report</h3>
+                    <a href="">
+                        <h3>Report</h3>
+                    </a>
                 </li>
             </ul>
         </nav>
     </section>
-    <div id="social-media-section">
-        <img src="icon/facebook-icon.png" alt="facebook" id="facebook" class="social-media">
-        <img src="icon/instagram-icon.png" alt="instagram" id="instagram" class="social-media">
-        <img src="icon/youtube-icon.png" alt="youtube" id="youtube" class="social-media">
+    <!---------------------------------------------- social media ---------------------------------------------->
+    <div id="container-social-media-float">
+        <a href="https://facebook.com" target="_blank">
+            <img src="icon/facebook-icon.png" alt="facebook" id="facebook" class="social-media">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="icon/instagram-icon.png" alt="instagram" id="instagram" class="social-media">
+        </a>
+        <a href="https://youtube.com" target="_blank">
+            <img src="icon/youtube-icon.png" alt="youtube" id="youtube" class="social-media">
+        </a>
     </div>
+    <!---------------------------------------------- header ---------------------------------------------->
     <header>
-        <img src="icon/Logo.png" alt="logo" id="logo-header">
-        <div id="div-slide-imgs-header">
+        <a href="" id="logo-link-header"><img src="icon/Logo.png" alt="logo" id="logo-header"></a>
+        <div id="container-slide-imgs-header">
             <input type="radio" name="radio-slide-imgs-header" class="radio-slide-class"
                 id="input-images-slide-header-1" checked>
             <input type="radio" name="radio-slide-imgs-header" class="radio-slide-class"
@@ -72,16 +95,144 @@
             <input type="radio" name="radio-slide-imgs-header" class="radio-slide-class"
                 id="input-images-slide-header-4">
 
-            <div id="div-images-header"></div>
+            <div id="container-images-header"></div>
         </div>
     </header>
+    <!---------------------------------------------- main ---------------------------------------------->
     <main>
-        <section>
-            <h2 class="half-title-header">Bendigo Target <br> Archery Club</h2>
-
+        <!---------------------------------------------- main info main section ---------------------------------------------->
+        <section id="info-main-section">
+            <article>
+                <h2>Welcome</h2><br>
+                <p>Welcome to Bendigo Target Archery Club. The club started in 1948 and is one of the oldest target
+                    archery clubs in Victoria.
+                    <br>
+                    We&#39;re a family-friendly target archery club located at the Bendigo Racecourse off Golf Course
+                    Rd.
+                    <a href="section/aboutus.html" target="_blank">more...</a>
+                </p>
+            </article>
+            <h1 class="half-title-main">Bendigo Target <br> Archery Club<p><img src="icon/target-icon.png" alt="target">
+                </p>
+            </h1>
+            <article>
+                <h2>About us</h2><br>
+                <p>The Bendifo Target Archery Club The club started in 1948 and is one of the oldest target archery
+                    clubs in Victoria. The club operates a target field and an Indoor Archery Facility at the Bendigo
+                    Racecourse.
+                    <br>
+                    Archery is a great sport that gets you outside and keeps you active and healthy which many people
+                    find relaxing. Our club has a very family friendly approach, great social atmosphere and some very
+                    serious competitors aiming for international representation.
+                    <a href="section/aboutus.html" target="_blank">more...</a>
+                </p>
+            </article>
         </section>
+        <!---------------------------------------------- main tryarchery main section ---------------------------------------------->
+        <section id="tryarchery-main-section">
+            <div id="tryarchery-fix-img-section"></div>
+            <article id="tryarchery-global-article">
+                <article>
+                    <h2>Archery Courses</h2>
+                    <div>
+                        <p><b>Beginner&#39;s Course contents:</b></p><br>
+                        <ul>
+                            <li>Introduction</li>
+                            <li>Equipment & safety briefing</li>
+                            <li>Shooting demonstration</li>
+                            <li>Shoot your first arrows</li>
+                            <li>Bow type demonstration</li>
+                            <li>Shooting & scoring</li>
+                        </ul>
+                        <br>
+                        <p><b></b>Session contents:</b></b></p><br>
+                        <ul>
+                            <li>Finish membership paperwork</li>
+                            <li>Club walkaround and familiarisation</li>
+                            <li>Further training</li>
+                            <li>Fletching/choosing your new arrows</li>
+                        </ul>
+                        <a href="#">More...</a>
+                        <span>&#127919;</span>
+                    </div>
+                </article>
+                <article>
+                    <h2>Archery With Disabilities</h2>
+                    <p>The club supports archers with all abilities, including members competing at national and
+                        international para-archery events and the Invictus Games. Club facilities include indoor
+                        shooting facilities, paved disabled parking bays, an accessible toilet, and cement paths between
+                        buildings. The grassed outdoor fields are also used by para-archers. Experienced instructors and
+                        coaches can take you from novice through to international competitor and our members provide a
+                        friendly, supportive environment. You will need to arrange your own carer if required. Please
+                        contact us to discuss your requirements.&nbsp;
+                        <a href="#">More...</a>
+                    </p>
+                </article>
+                <article>
+                    <h2>Come &#39;N&#39; Try</h2>
+                    <p>If you are interested in giving archery a go, then the Come &#39;N&#39; Try Session is designed
+                        for you.
+                        A chance to experience archery in a low commitment way.<br><br>
+                        The club is very welcoming of people who use wheelchairs or have a disability, however please
+                        contact us before booking in as we may wish to arrange a special session with coaches with
+                        relevant experience.&nbsp;
+                        <a href="#">More...</a>
+                    </p>
+                    <span>&#127919;</span>
+                </article>
+            </article>
+        </section>
+        <!---------------------------------------------- main membership main section ---------------------------------------------->
+        <section id="membership-main-section">
+            <div id="container-membership-main-section">
+                <h2>Check out our Membership Fees!</h2>
+                <div id="container-icon-membership"></div>
+                <button><a href="section/membership.html" target="_blank">Membership</a></button>
+            </div>
+        </section>
+        <!---------------------------------------------- main target archery disciplines main section ---------------------------------------------->
+        <section id="archery-disciplines-main-section">
+            <h2>Target Archery Disciplines</h2>
+            <div id="container-archery-disciplines-main-section">
+                <a href="section/archerydisciplines.html#" target="_blank">Target</a>
+                <a href="section/archerydisciplines.html#" target="_blank">Indoor</a>
+                <a href="section/archerydisciplines.html#" target="_blank">Clout</a>
 
+                <div id="container-disciplines-pictures"></div>
+            </div>
+        </section>
+        <!---------------------------------------------- main coaching main section ---------------------------------------------->
+        <section id="coaching-main-section">
+            <article id="article-coaching-main-section">
+                <h2>Coaching</h2>
+                <p><i></i>There are 3 levels of coaches at the club Level 1, level 2, and level 3.
+                    Basic coaching help is available to all archers on most Saturday mornings from 9.00 to 11.30. The
+                    Level 2 and 3 Coaches offer assistance with measuring and advising you on your first bow purchase
+                    and the setup of your new bow.&nbsp;
+                    <a href="#">More...</a>
+                </p>
+            </article>
+        </section>
+        <!---------------------------------------------- main form main section ---------------------------------------------->
+        <section id="form-main-section">
+            <h2>Send us your question</h2>
+            <form action="" method="post">
+
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="form-name" placeholder="Name..." required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="form-email" placeholder="example@email.com" required>
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Write your message" required></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
     </main>
+    <!---------------------------------------------- footer ---------------------------------------------->
     <footer>
         <section id="info-footer">
             <fieldset id="general-info-footer-fieldset">
@@ -96,11 +247,11 @@
                 </div>
                 <div>
                     <b>Email:</b>
-                    <address>bendigoarcheryclub@gmail.com</address>
+                    <address><a href="mailto: bendigoarcheryclub@gmail.com">bendigoarcheryclub@gmail.com</a></address>
                 </div>
                 <div>
                     <b>Phone:</b>
-                    <i>0401573236</i>
+                    <i>0 401 573 236</i>
                 </div>
                 <div>
                     <b>Club Hours:</b>
@@ -112,22 +263,28 @@
             <fieldset id="map-footer-fieldset">
                 <legend>Map</legend>
                 <ul>
-                    <li>Home</li>
-                    <li>Try Archery</li>
-                    <li>Membership</li>
-                    <li>Disciplines</li>
-                    <li>Coaching</li>
-                    <li>Info</li>
-                    <li>Report</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Try Archery</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Disciplines</a></li>
+                    <li><a href="#">Coaching</a></li>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Report</a></li>
                 </ul>
             </fieldset>
             <fieldset id="social-media-footer-fieldset">
-                    <legend>Social</legend>
-                    <div id="social-media-footer-div">
+                <legend>Social</legend>
+                <div id="container-social-media-footer">
+                    <a href="https://facebook.com" target="_blank">Facebook &#128279;
                         <img src="icon/facebook-icon.png" alt="facebook" id="facebook-footer" class="social-media-footer">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">Instagram &#128279;
                         <img src="icon/instagram-icon.png" alt="instagram" id="instagram-footer" class="social-media-footer">
-                        <img src="icon/youtube-icon.png" alt="youtube" id="youtube-footer" class="social-media-footer">
-                    </div>
+                    </a>
+                    <a href="https://youtube.com" target="_blank">Youtube &#128279;
+                        <img src="icon/youtube-icon.png"alt="youtube" id="youtube-footer" class="social-media-footer">
+                    </a>
+                </div>
             </fieldset>
         </section>
         <hr>
