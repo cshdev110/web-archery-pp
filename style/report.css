@@ -5,6 +5,7 @@
 #report-global-section {
     position: relative;
     display: flex;
+    text-align: justify;
     height: 2000px;
 }
 
@@ -51,7 +52,7 @@ dialog>* {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 15vw;
+    width: min(200px, 17vw);
     height: 100vh;
     background-color: rgb(0, 0, 0, .9);
     color: white;
@@ -98,6 +99,77 @@ dialog>* {
 }
 
 /************************* main > document - Introduction *************************/
-#report-introduction>* {
-    padding-top: 2%;
+#report-introduction {
+    padding: 0% 3%;
+}
+
+#report-introduction>h3 {
+    padding: 8% 0% 2% 0%;
+}
+
+#report-introduction p {
+    padding: 1% 0%;
+}
+
+/************************* main > document - structure *************************/
+#report-structure {
+    padding: 0% 3%;
+}
+
+#report-structure>h3 {
+    padding: 8% 0% 2% 0%;
+}
+
+#report-structure img {
+    float: right;
+    padding: 1%;
+    margin: .2% 2%;
+    border: #696969 solid 1px;
+    clear: both;
+}
+
+#report-structure p {
+    padding: 1% 0%;
+}
+
+#report-structure>ul li {
+    list-style: symbols(cyclic '\265E') inside;
+}
+
+
+/************************* @media *************************/
+/************************* @media *************************/
+@media screen and (max-width:720px){
+
+    /************************* @media > content *************************/
+    #repor-content-main-section {
+        width: min(200px, 30vw);
+        transform: translateX(-100%);
+        transition: transform ease .2s;
+    }
+    #repor-content-main-section>ul a {
+        font-size: .8em;
+    }
+
+    #repor-content-main-section::after {
+        content: "\25EC";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        font-size: 4em;
+        text-shadow: 0px 0px 20px;
+        cursor: pointer;
+        transform: rotate(90deg) translateX(-50%);
+        transition: all ease .2s;
+    }
+
+    #repor-content-main-section:hover {
+        transform: translateX(0%);
+    }
+
+    #repor-content-main-section:hover::after {
+        font-size: 7em;
+        transform: rotate(90deg) translateX(-50%);
+    }
+
 }
