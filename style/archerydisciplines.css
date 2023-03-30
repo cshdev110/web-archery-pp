@@ -1,0 +1,71 @@
+/************************* main *************************/
+/************************* main > archery disciplines main section *************************/
+#archery-disciplines-main-section-html {
+    padding: 3%;
+}
+
+#container-archery-disciplines-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+#container-archery-disciplines-section>* {
+    margin: 3% 0%;
+}
+
+#container-archery-disciplines-section img {
+    width: min(400px, 40vw);
+    margin: 1% 2%;
+    box-shadow: 0px 5px 10px;
+}
+
+/************************* main > archery disciplines main section > target *************************/
+#target-article {
+    padding: 3%;
+    background-color: rgb(9, 112, 84, .3);
+    box-shadow: 0px 5px 10px;
+}
+
+#target-article img {
+    float: right;
+}
+
+#target-article>* {
+    margin-top: 2%;
+}
+
+/************************* main > archery disciplines main section > Indoor *************************/
+#indoor-article {
+    padding: 3%;
+    background-color: rgb(9, 112, 84, .3);
+    box-shadow: 0px 5px 10px;
+}
+
+#indoor-article {
+    padding-left: 1%;
+}
+
+#indoor-article img {
+    float: left;
+}
+
+#indoor-article>* {
+    margin-top: 2%;
+}
+
+/************************* main > archery disciplines main section > clout *************************/
+#clout-article {
+    padding: 3%;
+    background-color: rgb(9, 112, 84, .3);
+    box-shadow: 0px 5px 10px;
+}
+
+#clout-article img {
+    float: right;
+}
+
+#clout-article>* {
+    margin-top: 2%;
+}

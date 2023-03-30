@@ -1,0 +1,55 @@
+/************************* main *************************/
+/************************* main > membership-fees - main section *************************/
+#membership-fees-main-section-html {
+    padding: 3%;
+}
+
+#membership-fees-main-section-html>h1 {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#membership-fees-main-section-html article>ul>li {
+    list-style: symbols(cyclic '\27B3');
+}
+
+#membership-fees-main-section-html li li {
+    list-style: symbols(cyclic '\1F5F8') inside;
+}
+
+
+#membership-fees-main-section-html article {
+    margin: 2% 0%;
+    padding: 3% 6%;
+    background-color: rgb(9, 112, 84, .3);
+    background-repeat: no-repeat;
+    background-size: min(100px, 15vw);
+    background-position-x: 95%;
+    background-position-y: 50%;
+    box-shadow: 0px 5px 10px;
+}
+
+#membership-fees-main-section-html article>* {
+    margin: 2% 0%;
+}
+
+#membership-fees-main-section-html article:nth-of-type(1) {
+    background-image: url('../icon/archer-pro.png');    
+}
+
+#membership-fees-main-section-html article:nth-of-type(2) {
+    background-image: url('../icon/archery-junior.png');
+}
+
+#membership-fees-main-section-html article:nth-of-type(3) {
+    background-image: url('../icon/arrows-double.png');
+}
+
+#membership-fees-main-section-html article:nth-of-type(4) {
+    background-image: url('../icon/archery-curse.png');
+}
+
+#membership-fees-main-section-html article:nth-of-type(5) {
+    background-image: url('../icon/target-shootings.png');
+}
+

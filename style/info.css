@@ -1,0 +1,55 @@
+/************************* main *************************/
+/************************* main > info main section *************************/
+#info-main-section-html {
+    padding: 3% 0%;
+    text-align: justify;
+}
+
+#info-main-section-html>* {
+    margin: 2% 0%;
+}
+
+#info-main-section-html article {
+    margin: 5% 2%;
+    padding: 2% 0%;
+    background-color: rgb(9, 112, 84, .3);
+    box-shadow: 0px 5px 10px;
+}
+
+#info-main-section-html article>* {
+    padding: 2% 5%;
+}
+
+#info-main-section-html>article:first-child>h2 {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#info-main-section-html>img {
+    width: 100%;
+}
+
+#container-info-about-main-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+#container-info-about-main-section article {
+    width: 100%;
+}
+
+#container-info-about-main-section>article:nth-child(2) div {
+    display: flex;
+}
+
+#container-info-about-main-section>article:nth-child(2) div>* {
+    margin-right: 1%;
+}
+
+/************************* @media *************************/
+/************************* @media *************************/
+@media screen and (max-width:720px){
+    #container-info-about-main-section {
+        flex-wrap: wrap;
+    }
+}

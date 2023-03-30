@@ -1,0 +1,399 @@
+
+/************************* main *************************/
+/************************* main > info main section *************************/
+#info-main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8% 0%;
+}
+
+#info-main-section>* {
+    width: min(350px, max(200px, 27vw));
+    padding: 3%;
+}
+
+#info-main-section article:first-child,
+#info-main-section article:last-child {
+    background-color: rgb(255, 222, 0, .1);
+    text-align: justify;
+}
+
+.half-title-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(101, 153, 255, .1);
+    font-size: min(35px, 5vw);
+    text-align: center;
+    color: #097054;
+}
+
+.half-title-main img {
+    width: min(150px, 50%);
+    margin-top: 5%;
+}
+
+/************************* main > tryarchery main section *************************/
+#tryarchery-fix-img-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/Image2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: center;
+    background-size: 180vw;
+}
+
+#tryarchery-global-article {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 3%;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+#tryarchery-global-article article {
+    margin: 3% 0%;
+}
+
+#tryarchery-global-article article a {
+    color: white;
+}
+
+/* first article - tryarchery main section */
+#tryarchery-global-article>article:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2% 3%;
+    background-color: rgb(255, 222, 0, .1);
+}
+
+#tryarchery-global-article>article:first-child>div {
+    position: relative;
+}
+
+#tryarchery-global-article>article:first-child>h2 {
+    margin-left: 3%;
+}
+
+#tryarchery-global-article>article:first-child>div>span {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    font-size: min(150px, 15vw);
+    transform: translateY(-50%);
+}
+
+#tryarchery-global-article>article:first-child>* {
+    margin: 1% 0%;
+}
+
+#tryarchery-global-article>article:first-child div {
+    width: auto;
+    padding: 3%;
+    background-color: rgb(255, 222, 0, .1);
+}
+
+#tryarchery-global-article>article:first-child>div li {
+    list-style: symbols(cyclic '\27B3') inside;
+}
+
+/* second article - tryarchery main section */
+#tryarchery-global-article>article:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0%;
+    background-color: rgb(101, 153, 255, .1);
+}
+
+#tryarchery-global-article>article:nth-child(2)>p {
+    width: 60vw;
+    padding: 3%;
+    background-color: rgb(101, 153, 255, .1);
+    text-align: justify;
+}
+
+#tryarchery-global-article>article:nth-child(2) * {
+    margin: 1% 0%;
+}
+
+/* last article - tryarchery main section */
+#tryarchery-global-article>article:last-child {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 2% 3%;
+    background-color: rgb(255, 153, 0, .1);
+}
+
+#tryarchery-global-article>article:last-child>h2 {
+    margin-right: 3%;
+
+}
+
+#tryarchery-global-article>article:last-child>p {
+    width: auto;
+    padding: 3% 3% 3% 45vw;
+    background-color: rgb(255, 153, 0, .1);
+    text-align: justify;
+}
+
+#tryarchery-global-article>article:last-child>span {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    font-size: min(150px, 15vw);
+    transform: translateY(-40%);
+}
+
+#tryarchery-global-article>article:last-child * {
+    margin: 1% 0%;
+}
+
+/************************* main > membership fees main section *************************/
+#membership-main-section {
+    padding: 3%;
+}
+
+#container-membership-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-icon-membership {
+    width: 150px;
+    height: 150px;
+    background-image: url('../icon/membership-icon.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    ;
+    border-radius: 40px;
+    box-shadow: 0px 5px 10px;
+}
+
+#container-membership-main-section>button {
+    display: flex;
+    justify-content: center;
+    width: min(220px, 30vw);
+    height: min(60px, 10vw);
+    background-color: #6599FF;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px;
+}
+
+#container-membership-main-section>button:hover {
+    background-color: #84acfc;
+}
+
+#container-membership-main-section>button>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: min(1.5em, 4vw);
+    color: #000000;
+    transition: transform ease .1s;
+}
+
+#container-membership-main-section>button>a:hover {
+    transform: scale(1.1);
+}
+
+#container-membership-main-section * {
+    margin: 2% 0%;
+}
+
+/************************* main > target archery disciplines main section *************************/
+#archery-disciplines-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: min(40px, 3vw);
+    background-color: black;
+    color: #FFFFFF;
+}
+
+#archery-disciplines-main-section>h2 {
+    margin-bottom: 2%;
+}
+
+#container-archery-disciplines-main-section {
+    position: relative;
+    width: 100%;
+    height: min(500px, 60vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 2% 0%;
+    background-color: rgb(9, 112, 84, .3);
+}
+
+#container-archery-disciplines-main-section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(300px, 25vw);
+    height: min(40px, 7vw);
+    margin: 0.5% 8%;
+    background-color: rgb(255, 222, 0, .4);
+    font-size: min(1.2em, 3.5vw);
+    text-decoration: none;
+    border-radius: 0.5vw;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 0px 18px black;
+}
+
+#container-archery-disciplines-main-section a:hover {
+    background-color: rgb(255, 222, 0, .9);
+}
+
+#container-archery-disciplines-main-section a:first-child:hover~#container-disciplines-pictures {
+    background-image: url(../img/Image9.jpg);
+}
+
+#container-archery-disciplines-main-section a:nth-child(2):hover~#container-disciplines-pictures {
+    background-image: url(../img/Image11.jpg);
+}
+
+#container-archery-disciplines-main-section a:nth-child(3):hover~#container-disciplines-pictures {
+    background-image: url(../img/Image13.jpg);
+}
+
+#container-disciplines-pictures {
+    position: absolute;
+    right: 8%;
+    width: min(500px, 50vw);
+    height: min(500px, 50vw);
+    background-image: url('../img/Image7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 18px black;
+}
+
+/************************* main > coaching main section *************************/
+#coaching-main-section {
+    padding: 4%;
+}
+
+#article-coaching-main-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 5% 0%;
+}
+
+#article-coaching-main-section>p>i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../icon/coach-icon.png');
+    background-repeat: no-repeat;
+}
+
+#article-coaching-main-section>p {
+    width: 400px;
+    text-align: justify;
+}
+
+/************************* main > form main section *************************/
+#form-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+#form-main-section>form {
+    display: flex;
+    flex-direction: column;
+    width: min(500px, 90vw);
+    margin-top: 4%;
+}
+
+#form-main-section>form>input[type=email],
+#form-main-section>form>input[type=text] {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 40px;
+    margin-bottom: 5%;
+    padding-left: 2%;
+}
+
+#form-main-section>form>input[type=email]:valid,
+#form-main-section>form>input[type=text]:valid {
+    background-color: rgb(117, 255, 117);
+}
+
+#form-main-section>form>input[type=email]:valid:focus,
+#form-main-section>form>input[type=text]:valid:focus {
+    background-image: url('../icon/valid-icon.png');
+}
+
+#form-main-section>form>input[type=email]:required:invalid:focus,
+#form-main-section>form>input[type=text]:required:invalid:focus {
+    background-image: url('../icon/advise-icon.png'); 
+}
+
+#form-main-section>form>input[type=email]:invalid,
+#form-main-section>form>input[type=text]:invalid {
+    background-color: red;
+}
+ 
+
+
+#form-main-section>form>input[type=submit] {
+    height: 40px;
+    margin-top: 1%;
+    background-color: #097054;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: font-size ease .1s;
+}
+
+#form-main-section>form>input[type=submit]:hover {
+    background-color: #0d9b75;
+    font-size: 1.3em;
+
+}
+
+/************************* @media *************************/
+/************************* @media *************************/
+@media screen and (max-width: 720px) {
+
+    
+
+    /************************* @media main *************************/
+    /************************* main > info main section *************************/
+    #info-main-section>* {
+        width: 90%;
+    }
+
+    /************************* @media main > tryarchery main section *************************/
+    #tryarchery-fix-img-section {
+        background-size: 300vw;
+    }
+
+    #tryarchery-global-article>article:first-child>div>span {
+        font-size: 15vw;
+    }
+}

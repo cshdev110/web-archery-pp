@@ -13,57 +13,57 @@
 <body>
     <!---------------------------------------------- bar menu - nav ---------------------------------------------->
     <section id="section-menu-bar-nav">
-        <a href=""><img src="icon/Logo.png" alt="Logo" id="logo-nav"></a>
+        <a href="index.html"><img src="icon/Logo.png" alt="Logo" id="logo-nav"></a>
         <p id="contact-menu-bar-section">
             <img src="icon/phone-icon.png" alt="icon-phone" id="phone-icon-menu-bar-section"> (+61) 401573236
         </p>
         <input type="checkbox" id="responsive-nav-input">
         <nav id="menu-bar-nav">
             <ul>
-                <li id="home-li"><a href=""><img src="icon/home-icon.png" alt="Home"></a></li>
+                <li id="home-li"><a href="index.html"><img src="icon/home-icon.png" alt="Home"></a></li>
                 <li id="sub-menu-bar-tryarchery">
                     <div>
-                        <a href="section/tryarchery.html" target="_blank">
+                        <a href="section/tryarchery.html">
                             <h3>Try Archery</h3>
                             <i></i>
                         </a>
                     </div>
                     <ul class="ul-sub-menu-bar">
-                        <li><a href="">Archery Courses</a></li>
-                        <li><a href="">Archery Width Disabilities</a></li>
-                        <li><a href="">Come &#39;N&#39; Try Sessions</a></li>
+                        <li><a href="section/tryarchery.html#archery-courses-article">Archery Courses</a></li>
+                        <li><a href="section/tryarchery.html#archery-with-disabilities-article">Archery Width Disabilities</a></li>
+                        <li><a href="section/tryarchery.html#come-n-try-sessions-article">Come &#39;N&#39; Try Sessions</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="section/membership.html">
                         <h3>Membership</h3>
                     </a>
                 </li>
                 <li id="sub-menu-bar-disciplines">
                     <div>
-                        <a href="">
+                        <a href="section/archerydisciplines.html">
                             <h3>Disciplines</h3>
                             <i></i>
                         </a>
                     </div>
                     <ul class="ul-sub-menu-bar">
-                        <li><a href="">Target Archery</a></li>
-                        <li><a href="">Indoor Archery</a></li>
-                        <li><a href="">Clout Archery</a></li>
+                        <li><a href="section/archerydisciplines.html#target-article">Target Archery</a></li>
+                        <li><a href="section/archerydisciplines.html#indoor-article">Indoor Archery</a></li>
+                        <li><a href="section/archerydisciplines.html#clout-article">Clout Archery</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="section/coaching.html">
                         <h3>Coaching</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="section/info.html">
                         <h3>Info</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="section/report.html">
                         <h3>Report</h3>
                     </a>
                 </li>
@@ -72,13 +72,13 @@
     </section>
     <!---------------------------------------------- social media ---------------------------------------------->
     <div id="container-social-media-float">
-        <a href="https://facebook.com" target="_blank">
+        <a href="https://facebook.com">
             <img src="icon/facebook-icon.png" alt="facebook" id="facebook" class="social-media">
         </a>
-        <a href="https://instagram.com" target="_blank">
+        <a href="https://instagram.com">
             <img src="icon/instagram-icon.png" alt="instagram" id="instagram" class="social-media">
         </a>
-        <a href="https://youtube.com" target="_blank">
+        <a href="https://youtube.com">
             <img src="icon/youtube-icon.png" alt="youtube" id="youtube" class="social-media">
         </a>
     </div>
@@ -109,7 +109,7 @@
                     <br>
                     We&#39;re a family-friendly target archery club located at the Bendigo Racecourse off Golf Course
                     Rd.
-                    <a href="section/aboutus.html" target="_blank">more...</a>
+                    <a href="section/aboutus.html">more...</a>
                 </p>
             </article>
             <h1 class="half-title-main">Bendigo Target <br> Archery Club<p><img src="icon/target-icon.png" alt="target">
@@ -124,7 +124,7 @@
                     Archery is a great sport that gets you outside and keeps you active and healthy which many people
                     find relaxing. Our club has a very family friendly approach, great social atmosphere and some very
                     serious competitors aiming for international representation.
-                    <a href="section/aboutus.html" target="_blank">more...</a>
+                    <a href="section/aboutus.html">more...</a>
                 </p>
             </article>
         </section>
@@ -187,16 +187,16 @@
             <div id="container-membership-main-section">
                 <h2>Check out our Membership Fees!</h2>
                 <div id="container-icon-membership"></div>
-                <button><a href="section/membership.html" target="_blank">Membership</a></button>
+                <button><a href="section/membership.html">Membership</a></button>
             </div>
         </section>
         <!---------------------------------------------- main target archery disciplines main section ---------------------------------------------->
         <section id="archery-disciplines-main-section">
             <h2>Target Archery Disciplines</h2>
             <div id="container-archery-disciplines-main-section">
-                <a href="section/archerydisciplines.html#" target="_blank">Target</a>
-                <a href="section/archerydisciplines.html#" target="_blank">Indoor</a>
-                <a href="section/archerydisciplines.html#" target="_blank">Clout</a>
+                <a href="section/archerydisciplines.html#">Target</a>
+                <a href="section/archerydisciplines.html#">Indoor</a>
+                <a href="section/archerydisciplines.html#">Clout</a>
 
                 <div id="container-disciplines-pictures"></div>
             </div>
@@ -219,7 +219,7 @@
             <form action="" method="post">
 
                 <label for="name">Name:</label>
-                <input type="text" name="name" id="form-name" placeholder="Name..." required>
+                <input type="text" name="name" id="form-name" placeholder="Name..." maxlength="45" pattern="[A-Za-z]{2,45}" required>
 
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="form-email" placeholder="example@email.com" required>
@@ -236,7 +236,7 @@
     <footer>
         <section id="info-footer">
             <fieldset id="general-info-footer-fieldset">
-                <legend>Contact</legend>
+                <h2>Contact</h2>
                 <div>
                     <b>Address:</b>
                     <address>
@@ -261,27 +261,27 @@
                 </div>
             </fieldset>
             <fieldset id="map-footer-fieldset">
-                <legend>Map</legend>
+                <h2>Map</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Try Archery</a></li>
-                    <li><a href="#">Membership</a></li>
-                    <li><a href="#">Disciplines</a></li>
-                    <li><a href="#">Coaching</a></li>
-                    <li><a href="#">Info</a></li>
-                    <li><a href="#">Report</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="section/tryarchery.html">Try Archery</a></li>
+                    <li><a href="section/membership.html">Membership</a></li>
+                    <li><a href="section/archerydisciplines.html">Disciplines</a></li>
+                    <li><a href="section/coaching.html">Coaching</a></li>
+                    <li><a href="section/info.html">Info</a></li>
+                    <li><a href="section/report.html">Report</a></li>
                 </ul>
             </fieldset>
             <fieldset id="social-media-footer-fieldset">
-                <legend>Social</legend>
+                <h2>Social</h2>
                 <div id="container-social-media-footer">
-                    <a href="https://facebook.com" target="_blank">Facebook &#128279;
+                    <a href="https://facebook.com">Facebook &#128279;
                         <img src="icon/facebook-icon.png" alt="facebook" id="facebook-footer" class="social-media-footer">
                     </a>
-                    <a href="https://instagram.com" target="_blank">Instagram &#128279;
+                    <a href="https://instagram.com">Instagram &#128279;
                         <img src="icon/instagram-icon.png" alt="instagram" id="instagram-footer" class="social-media-footer">
                     </a>
-                    <a href="https://youtube.com" target="_blank">Youtube &#128279;
+                    <a href="https://youtube.com">Youtube &#128279;
                         <img src="icon/youtube-icon.png"alt="youtube" id="youtube-footer" class="social-media-footer">
                     </a>
                 </div>

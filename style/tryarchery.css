@@ -1,0 +1,74 @@
+/************************* main *************************/
+/************************* main > tryarchery main section *************************/
+#tryarchery-main-section-html {
+    padding: 3%;
+}
+
+#container-tryarchery-articles-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+#container-tryarchery-articles-main-section>* {
+    margin: 3% 0%;
+}
+
+#container-tryarchery-articles-main-section img {
+    width: min(400px, 40vw);
+    margin: 1% 2%;
+    box-shadow: 0px 5px 10px;
+}
+
+/************************* main > tryarchery main section > archery courses *************************/
+#archery-courses-article {
+    padding: 3%;
+    background-color: rgb(9, 112, 84, .3);
+    box-shadow: 0px 5px 10px;
+
+}
+
+#archery-courses-article ul>li {
+    list-style: symbols(cyclic '\27B3') inside;
+}
+
+#archery-courses-article img {
+    float: right;
+}
+
+#archery-courses-article>* {
+    margin-top: 2%;
+}
+
+/************************* main > tryarchery main section > archery with disabilities *************************/
+#archery-with-disabilities-article {
+    padding: 3%;
+    background-color: rgb(9, 112, 84, .3);
+    box-shadow: 0px 5px 10px;
+
+}
+
+#archery-with-disabilities-article {
+    padding-left: 1%;
+}
+
+#archery-with-disabilities-article img {
+    float: left;
+}
+
+#archery-with-disabilities-article>* {
+    margin-top: 2%;
+}
+
+/************************* main > tryarchery main section > archery with disabilities *************************/
+#come-n-try-sessions-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+#come-n-try-sessions-article>* {
+    margin: 3% 0%;
+}

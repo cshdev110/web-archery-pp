@@ -1,0 +1,75 @@
+/************************* main *************************/
+/************************* main > coaching main section *************************/
+#coaching-main-section-html {
+    padding: 3% 0%;
+    text-align: justify;
+
+}
+
+#coaching-main-section-html article:first-of-type>* {
+    margin: 2% 0%;
+}
+
+#coaching-main-section-html>h1 {
+    text-align: center;
+}
+
+#coaching-main-section-html li {
+    padding-left:1%;
+    list-style: symbols(cyclic '\27B3') inside;
+}
+
+#coaching-main-section-html article {
+    margin: 5% 3%;
+    padding: 4%;
+    background-color: rgb(9, 112, 84, .3);
+    box-shadow: 0px 5px 10px;
+}
+
+#coaching-main-section-html img {
+    width: 100%;
+}
+
+#coaching-main-section-html details {
+    margin: 4% 0%;
+    background-color: rgb(9, 112, 84, .3);
+    box-shadow: 0px 5px 10px;
+}
+
+#coaching-main-section-html details summary {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none ;
+    font-size: 1em;
+    padding: 3% 0% 3% 15%;
+    cursor: pointer;
+}
+
+#coaching-main-section-html details summary::before {
+    content: "";
+    position: absolute;
+    left: 1%;
+    width: min(40px, 7vw);
+    height: min(40px, 7vw);
+    background-image: url(../icon/target-tips.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease .1s;
+}
+
+#coaching-main-section-html details summary:hover::before {
+    transform: scale(1.3);
+}
+
+#coaching-main-section-html details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+#coaching-main-section-html details div {
+    padding: 0% 5% 5% 5%;
+}
+
+#coaching-main-section-html details div>* {
+    margin: 2% 0%;
+}
