@@ -315,6 +315,62 @@ dialog>* {
     display: block !important;
 }
 
+/************************* main > document - main > disciplines *************************/
+/* HTML */
+.html-code-report:checked ~ #html-code-disciplines-textarea-report {
+    display: block !important;
+}
+
+/* CSS */
+.css-code-report:checked ~ #css-code-disciplines-textarea-report {
+    display: block !important;
+}
+
+/************************* main > document - main > coaching *************************/
+/* HTML */
+.html-code-report:checked ~ #html-code-coaching-textarea-report {
+    display: block !important;
+}
+
+/* CSS */
+.css-code-report:checked ~ #css-code-coaching-textarea-report {
+    display: block !important;
+}
+
+/************************* main > document - main > info *************************/
+/* HTML */
+.html-code-report:checked ~ #html-code-info-textarea-report {
+    display: block !important;
+}
+
+/* CSS */
+.css-code-report:checked ~ #css-code-info-textarea-report {
+    display: block !important;
+}
+
+/************************* main > content *************************/
+/************************* main > document - form *************************/
+/* HTML */
+.html-code-report:checked ~ #html-code-form-textarea-report {
+    display: block !important;
+}
+
+/* CSS */
+.css-code-report:checked ~ #css-code-form-textarea-report {
+    display: block !important;
+}
+
+/************************* main > document - footer *************************/
+/* HTML */
+.html-code-report:checked ~ #html-code-footer-textarea-report {
+    display: block !important;
+}
+
+/* CSS */
+.css-code-report:checked ~ #css-code-footer-textarea-report {
+    display: block !important;
+}
+
 /************************* @media *************************/
 /************************* @media *************************/
 @media screen and (max-width:720px){
