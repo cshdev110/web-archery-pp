@@ -136,6 +136,10 @@
                         work to use other technologies, those features were built using only CSS, where JavaScript would
                         be a better option, instead. Perhaps, those changes could be done in feature updates.
                     </p>
+                    <p>
+                        Lastly, this website is almost responsive, except for the report page, which is better to
+                        display on regular screens rather than on small devices.
+                    </p>
                 </article>
                 <!-- <hr> -->
                 <article class="report-articles-content" id="report-structure">
@@ -328,7 +332,8 @@ end-->
                     <h4>Font</h4>
                     <p>The font used in the entire website is 'Ubuntu' and imported on the style.css main stylesheet.
                         Link to the font:
-                        <i>https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap</i></p>
+                        <i>https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap</i>
+                    </p>
                     <br><br>
                     <h4>Resources</h4>
                     <ul>
@@ -384,7 +389,7 @@ end-->
             <li id="home-li"><a href="index.html"><img src="icon/home-icon.png" alt="Home"></a></li>
             <li id="sub-menu-bar-tryarchery">
                 <div>
-                    <a href="section/tryarchery.html">
+                    <a href="#">
                         <h3>Try Archery</h3>
                         <i></i>
                     </a>
@@ -402,7 +407,7 @@ end-->
             </li>
             <li id="sub-menu-bar-disciplines">
                 <div>
-                    <a href="section/archerydisciplines.html">
+                    <a href="#">
                         <h3>Disciplines</h3>
                         <i></i>
                     </a>
@@ -1518,7 +1523,8 @@ end -->
                                 id="html-code-try-archery-report" checked>
                             <input type="radio" name="html-css-code-selection-try-archery" class="css-code-report"
                                 id="css-code-try-archery-report">
-                            <textarea class="html-code-textarea-report" id="html-code-try-archery-textarea-report" readonly>
+                            <textarea class="html-code-textarea-report" id="html-code-try-archery-textarea-report"
+                                readonly>
 <!-- start
 
 ---------------------------------------------- main ----------------------------------------------
@@ -1721,7 +1727,8 @@ end -->
                                 id="html-code-membership-report" checked>
                             <input type="radio" name="html-css-code-selection-membership" class="css-code-report"
                                 id="css-code-membership-report">
-                            <textarea class="html-code-textarea-report" id="html-code-membership-textarea-report" readonly>
+                            <textarea class="html-code-textarea-report" id="html-code-membership-textarea-report"
+                                readonly>
 <!-- start
 
 ---------------------------------------------- main ----------------------------------------------
@@ -2623,18 +2630,17 @@ end -->
 #info-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     background-color: #097054;
     padding: 0% 0%;
 }
 
 #info-footer fieldset {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    width: min(300px, calc(82vw/3));
-    margin: 8% 0%;
-    padding: 2%;
+    width: 100%;
+    margin: 8% 1%;
+    padding: 2% 0%;
     border: none;
     border-radius: 10px;
     border-color: #097054;
@@ -2649,7 +2655,6 @@ end -->
 
 /* general info footer */
 #general-info-footer-fieldset {
-    /* background-color: rgb(255, 222, 0, .1); */
     background-color: rgb(101, 153, 255, .1);
 
 }
@@ -2659,12 +2664,11 @@ end -->
     flex-direction: row;
     justify-content: left;
     flex-wrap: wrap;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin; ;
 }
 
 #general-info-footer-fieldset div>* {
-    margin-right: 2%;
+    padding: 0% 2%;
 }
 
 #general-info-footer-fieldset b {
@@ -2681,14 +2685,14 @@ end -->
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    margin: 2% 0%;
     list-style: none;
 }
 
 #map-footer-fieldset li {
     text-align: center;
     width: 100%;
-    margin: 2%;
+    margin-bottom: 1%;
 }
 
 #map-footer-fieldset li a {
@@ -2697,9 +2701,7 @@ end -->
 
 /* social media footer */
 #social-media-footer-fieldset {
-    /* background-color: rgb(255, 153, 0, .1); */
     background-color: rgb(101, 153, 255, .1);
-
 }
 
 #container-social-media-footer {
@@ -2708,15 +2710,16 @@ end -->
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: 100%;
 }
 
 #container-social-media-footer>a {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
     color: black;
     text-decoration: none;
 }
@@ -2725,9 +2728,8 @@ end -->
     width: min(50px, 10vw);
     height: min(50px, 10vw);
     background-color: rgba(255, 255, 255, 0.3);
-    padding: 1%;
-    margin: 1% 0%;
     border-radius: 10px;
+    margin: 2%;
     box-shadow: 0px 5px 10px;
     cursor: pointer;
     transition: transform ease .2s;
@@ -2742,6 +2744,19 @@ end -->
     text-align: center;
     padding: 2% 0%;
     color: white;
+}
+
+/************************* @media *************************/
+/************************* @media *************************/
+@media screen and (max-width: 720px) {
+    /************************* footer *************************/
+    #info-footer {
+        flex-wrap: wrap;
+    }
+
+    #info-footer fieldset {
+        margin: 2% 1%;
+    }
 }
                         </textarea>
                     </div>

@@ -295,18 +295,17 @@ header {
 #info-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     background-color: #097054;
     padding: 0% 0%;
 }
 
 #info-footer fieldset {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    width: min(300px, calc(82vw/3));
-    margin: 8% 0%;
-    padding: 2%;
+    width: 100%;
+    margin: 8% 1%;
+    padding: 2% 0%;
     border: none;
     border-radius: 10px;
     border-color: #097054;
@@ -321,7 +320,6 @@ header {
 
 /* general info footer */
 #general-info-footer-fieldset {
-    /* background-color: rgb(255, 222, 0, .1); */
     background-color: rgb(101, 153, 255, .1);
 
 }
@@ -331,12 +329,11 @@ header {
     flex-direction: row;
     justify-content: left;
     flex-wrap: wrap;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin; ;
 }
 
 #general-info-footer-fieldset div>* {
-    margin-right: 2%;
+    padding: 0% 2%;
 }
 
 #general-info-footer-fieldset b {
@@ -353,14 +350,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    margin: 2% 0%;
     list-style: none;
 }
 
 #map-footer-fieldset li {
     text-align: center;
     width: 100%;
-    margin: 2%;
+    margin-bottom: 1%;
 }
 
 #map-footer-fieldset li a {
@@ -369,9 +366,7 @@ header {
 
 /* social media footer */
 #social-media-footer-fieldset {
-    /* background-color: rgb(255, 153, 0, .1); */
     background-color: rgb(101, 153, 255, .1);
-
 }
 
 #container-social-media-footer {
@@ -380,15 +375,16 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: 100%;
 }
 
 #container-social-media-footer>a {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
     color: black;
     text-decoration: none;
 }
@@ -397,9 +393,8 @@ header {
     width: min(50px, 10vw);
     height: min(50px, 10vw);
     background-color: rgba(255, 255, 255, 0.3);
-    padding: 1%;
-    margin: 1% 0%;
     border-radius: 10px;
+    margin: 2%;
     box-shadow: 0px 5px 10px;
     cursor: pointer;
     transition: transform ease .2s;
@@ -620,5 +615,14 @@ header {
 
     #container-images-header {
         background-image: url('../img/Image2.jpg');
+    }
+
+    /************************* footer *************************/
+    #info-footer {
+        flex-wrap: wrap;
+    }
+
+    #info-footer fieldset {
+        margin: 2% 1%;
     }
 }
