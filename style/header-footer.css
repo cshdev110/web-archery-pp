@@ -1,6 +1,5 @@
 /* header-footer style */
 
-
 /************************* Nav - menu *************************/
 #section-menu-bar-nav {
     position: sticky;
@@ -423,7 +422,6 @@ header {
     
     /************************* @media - nav - menu *************************/
     #section-menu-bar-nav {
-        /* flex-direction: row; */
         justify-content: flex-end;
         z-index: 10;
     }
